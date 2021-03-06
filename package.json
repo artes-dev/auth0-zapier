@@ -1,0 +1,24 @@
+{
+  "name": "auth-0-by-artes-development",
+  "version": "1.0.2",
+  "description": "Auth0 Integration by Artes Development to find, create and update Auth0 users and create password reset links.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive -t 10000"
+  },
+  "engines": {
+    "node": ">=v12",
+    "npm": ">=5.6.0"
+  },
+  "dependencies": {
+    "zapier-platform-core": "9.4.2"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "should": "^13.2.0"
+  },
+  "private": true,
+  "zapier": {
+    "convertedByCLIVersion": "10.2.0"
+  }
+}

@@ -1,0 +1,70 @@
+module.exports = {
+  operation: {
+    perform: {
+      url: 'https://{{bundle.authData.domain}}/api/v2/users-by-email',
+      method: 'GET',
+      params: { email: '{{bundle.inputData.email}}' },
+      headers: {
+        'Content-Type': 'application/json',
+        authorization: 'Bearer {{bundle.authData.access_token}}',
+      },
+      body: {},
+      removeMissingValuesFrom: {},
+    },
+    inputFields: [
+      {
+        key: 'email',
+        label: 'Email',
+        type: 'string',
+        required: true,
+        list: false,
+        altersDynamicFields: false,
+      },
+    ],
+    sample: {
+      created_at: '2021-02-19T03:35:40.771Z',
+      email: 'user@example.com',
+      email_verified: true,
+      family_name: 'Smith',
+      given_name: 'John',
+      identities: [
+        {
+          connection: 'Username-Password-Authentication',
+          user_id: '602f320c77c8ae007076ff44',
+          provider: 'auth0',
+          isSocial: false,
+        },
+      ],
+      name: 'Flux Last',
+      nickname: 'fluxist+zap',
+      picture:
+        'https://s.gravatar.com/avatar/34c81dadf51f4987a308736af739ffff?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fjs.png',
+      updated_at: '2021-02-19T03:35:40.771Z',
+      user_id: 'auth0|602f320c77c8ae007076ff44',
+    },
+    outputFields: [
+      { key: 'created_at' },
+      { key: 'email' },
+      { key: 'email_verified', type: 'boolean' },
+      { key: 'family_name' },
+      { key: 'given_name' },
+      { key: 'identities[]connection' },
+      { key: 'identities[]user_id' },
+      { key: 'identities[]provider' },
+      { key: 'identities[]isSocial' },
+      { key: 'name' },
+      { key: 'nickname' },
+      { key: 'picture' },
+      { key: 'updated_at' },
+      { key: 'user_id' },
+    ],
+  },
+  key: 'find_user',
+  noun: 'User',
+  display: {
+    label: 'Find User',
+    description: 'Find a User in Auth0',
+    hidden: false,
+    important: true,
+  },
+};
