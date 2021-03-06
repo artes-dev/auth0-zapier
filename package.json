@@ -1,7 +1,7 @@
 {
   "name": "auth-0-by-artes-development",
   "version": "1.0.2",
-  "description": "Auth0 Integration by Artes Development to find, create and update Auth0 users and create password reset links.",
+  "description": "Auth0 Integration by Robert Testagrossa to find, create and update Auth0 users and create password reset links.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --recursive -t 10000"
