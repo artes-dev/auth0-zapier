@@ -3,7 +3,7 @@
 Custom Zapier Integration for Auth0. Currently includes Actions for *Find*, *Create*, and *Update* Users and *Create Password Reset Link*.
 
 ##Installation
-Currently in Invite-only mode. Invite link available [here]()
+Currently in Invite-only mode. Invite link available [here](https://zapier.com/developer/public-invite/127330/cfda4324508cf0236900edc8a64704df/)
 
 ##Setup
 1. Get `Client ID`, `Client Secret` and `Domain` from [Auth0 Management Dashboard](https://manage.auth0.com/dashboard) -> Applications -> Settings.
